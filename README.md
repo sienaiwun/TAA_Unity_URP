@@ -1,6 +1,6 @@
 # Temporal Anti-Alasing for Unity’s Universal Render Pipeline
 
-This Temporal Anti-Aliasing package provides full object motion blur for Unity's Universal Render Pipeline. It jitters the camera's projection before the whole rendering process, , which can samples differant surface between adjacent frames. Temporal Anti-Aliasing can then be enabled with the provided **Temporal Anti-Aliasing** **Volume Component** for Scriptable Render Pipeline's **Volume** system, supported by default in Universal Render Pipeline.
+This Temporal Anti-Aliasing package provides full object motion blur for Unity's Universal Render Pipeline. It jitters the camera's projection before the whole rendering process, which can samples differant surfaces between adjacent frames. Temporal Anti-Aliasing pass can then be enabled after the transparent rendering with the provided **Temporal Anti-Aliasing** **Volume Component** for Scriptable Render Pipeline's **Volume** system, supported by default in Universal Render Pipeline.
 
 ## Instructions
 - Open your project manifest file (`MyProject/Packages/manifest.json`).
