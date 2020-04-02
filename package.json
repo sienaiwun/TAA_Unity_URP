@@ -1,0 +1,10 @@
+{
+    "name": "com.xienaiwen.taa",
+    "description": "Temporal Anti Aliasing for Unity's Universal Render Pipeline.",
+    "version": "0.1.0",
+    "unity": "2019.3",
+    "displayName": "TAA",
+    "dependencies": {
+        "com.unity.render-pipelines.universal": "7.x.x"
+    }
+}
