@@ -21,7 +21,7 @@ In the Frame Analysis, we also find there is no jitter in the native PostProcess
 
 ![TAA_PP_Failed](https://github.com/sienaiwun/publicImgs/blob/master/imgs/TAA/TAA_PP_Failed.png?raw=true)
 
-## Result
+## Result (4x scale ZoomIn)
 ![NOAA.png](https://github.com/sienaiwun/publicImgs/blob/master/imgs/TAA/NOAA.png?raw=true)
 TAA:
 
