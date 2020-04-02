@@ -4,7 +4,7 @@ This Temporal Anti-Aliasing package provides full object motion blur for Unity's
 
 ## Instructions
 - Open your project manifest file (`MyProject/Packages/manifest.json`).
-- Add `"com.xienaiwen.taa": "file:src/NaiwenTAA",` to the `dependencies` list.
+- Add `"com.xienaiwen.taa": "https://github.com/sienaiwun/TAA_Unity_URP.git",` to the `dependencies` list.
 - Open or focus on Unity Editor to resolve packages.
 - Enable "Depth Texture" in the pipeline asset.
 - Add TAAFeature in the render's asset settting.
