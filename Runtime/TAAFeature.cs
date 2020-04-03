@@ -46,6 +46,10 @@ namespace Naiwen.TAA
                 m_TAAPass.Setup(TaaData, TaaComonent);
                 renderer.EnqueuePass(m_TAAPass);
             }
+            else if (!TaaComonent.IsActive())
+            {
+                m_TAAPass.Clear();
+            }
             
         }
 

@@ -47,6 +47,25 @@ namespace Naiwen.TAA
             m_Material = new Material(Shader.Find(TaaShader));
         }
 
+        void ClearRT(ref RenderTexture rt)
+        {
+            if(rt!= null)
+            {
+                RenderTexture.ReleaseTemporary(rt);
+                rt = null;
+            }
+        }
+
+        internal void Clear()
+        {
+            if(historyBuffer!=null)
+            {
+                ClearRT(ref historyBuffer[0]);
+                ClearRT(ref historyBuffer[1]);
+                historyBuffer = null;
+            }
+        }
+
         void EnsureArray<T>(ref T[] array, int size, T initialValue = default(T))
         {
             if (array == null || array.Length != size)
