@@ -17,7 +17,7 @@ This Temporal Anti-Aliasing package provides Temporal Anti-Aliasing for Unity's 
 ## Requirements
 - Unity 2019.3.0f3 or higher.
 
-## Why 
+## Motivations 
 Unity's default Temporal Anti-Aliasing(TAA) has some problems in Universal Render Pipeline (URP). Natively, URP does not support TAA while Unity PostProcess V2 does support. However, PostProcess V2's support fails for TAA because it cannot jitter the camera in the ScriptableRenderPipeline [PostProcessLayer.cs] line:996(https://github.com/Unity-Technologies/PostProcessing/blob/v2/PostProcessing/Runtime/PostProcessLayer.cs)
 In the Frame Analysis, we also find there is no jitter in the native PostProcess V2 TAA pass.
 
