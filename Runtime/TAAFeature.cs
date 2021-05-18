@@ -10,22 +10,13 @@ namespace Naiwen.TAA
     {
         #region Fields
         static ScriptableRendererFeature s_Instance;
-        readonly CameraSettingPass m_cameraSettingPass;
-        readonly TAAPass m_TAAPass;
+        CameraSettingPass m_cameraSettingPass;
+        TAAPass m_TAAPass;
         Dictionary<Camera, TAAData> m_TAADatas;
         Matrix4x4 previewView;
         Matrix4x4 previewProj;
         #endregion
-
-        internal TAAFeature()
-        {
-            // Set data
-            s_Instance = this;
-            m_cameraSettingPass = new CameraSettingPass();
-            m_TAAPass = new TAAPass();
-            m_TAADatas = new Dictionary<Camera, TAAData>();
-        }
-
+        
 
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
@@ -55,7 +46,11 @@ namespace Naiwen.TAA
 
         public override void Create()
         {
+            s_Instance = this;
             name = "TAA";
+            m_cameraSettingPass = new CameraSettingPass();
+            m_TAAPass = new TAAPass();
+            m_TAADatas = new Dictionary<Camera, TAAData>();
         }
 
         void UpdateTAAData(RenderingData renderingData, TAAData TaaData, TemporalAntiAliasing Taa)
