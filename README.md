@@ -2,14 +2,14 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/sienaiwun/TAA_Unity_URP/pulls)
 # Temporal Anti-Alasing for Unity’s Universal Render Pipeline
 
-This Temporal Anti-Aliasing package provides Temporal Anti-Aliasing for Unity's Universal Render Pipeline. It jitters the camera's projection before the whole rendering process, which can samples differant surfaces between adjacent frames. Temporal Anti-Aliasing pass can then be enabled to smooth the to achieve better band-limiting image after the transparent rendering with the provided **Temporal Anti-Aliasing** **Volume Component** for Scriptable Render Pipeline's **Volume** system, supported by default in Universal Render Pipeline.
+This Temporal Anti-Aliasing package provides Temporal Anti-Aliasing for Unity's Universal Render Pipeline. It jitters the camera's projection before the whole rendering process, which can samples different surfaces between adjacent frames. Temporal Anti-Aliasing pass can then be enabled to smooth  to achieve better band-limiting image after the transparent rendering with the provided **Temporal Anti-Aliasing** **Volume Component** for Scriptable Render Pipeline's **Volume** system, supported by default in Universal Render Pipeline.
 
 ## Instructions
 - Open your project manifest file (`MyProject/Packages/manifest.json`).
 - Add `"com.xienaiwen.taa": "https://github.com/sienaiwun/TAA_Unity_URP.git",` to the `dependencies` list.
 - Open or focus on Unity Editor to resolve packages.
 - Enable "Depth Texture" in the pipeline asset.
-- Add TAAFeature in the render's asset settting.
+- Add TAAFeature in the render's asset setting.
 ![Add_Features.png](https://github.com/sienaiwun/publicImgs/blob/master/imgs/TAA/Add_Features.png?raw=true)
 - Add "Temporal Anti-Aliasing" Component in the Post-process Vilome and set the "feedback" param to more than 0.
 ![Post-process%20Volumn.png](https://github.com/sienaiwun/publicImgs/blob/master/imgs/TAA/Post-process%20Volumn.png?raw=true)
